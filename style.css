@@ -1,0 +1,105 @@
+/* Resetando estilos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo geral do corpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container da tela inicial */
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url('fundo.webp') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Texto romântico */
+.frase-romantica {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    color: red;
+    margin-bottom: 20px;
+}
+
+/* Estilo do botão */
+button {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    color: red;
+    border: 2px solid black; /* Bordas pretas */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #d84315;
+}
+
+/* Responsividade para telas pequenas */
+@media (max-width: 600px) {
+    .frase-romantica {
+        font-size: 1.2rem; /* Ajusta o tamanho da frase */
+    }
+}
+
+/* Estilo do botão com fundo branco transparente */
+button {
+    display: inline-block; /* Garante que o botão seja exibido separadamente */
+    margin-top: 20px; /* Espaçamento adicional, se necessário */
+}
+
+/* Estilo da frase romântica com fundo branco transparente */
+.frase-romantica {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    background-color: rgba(255, 255, 255, 0.5); /* Fundo branco com transparência */
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
+    display: inline-block;
+}
+
+html, body {
+    overflow: hidden;
+    height: 100%;
+}
+
+/* Para telas pequenas (celulares) */
+@media (max-width: 600px) {
+    .container-imagem {
+        padding: 10px; /* Ajuste do padding para telas menores */
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/* Para telas maiores (tablets e desktops) */
+@media (min-width: 601px) {
+    .container-imagem {
+        padding: 20px;
+    }
+
+    img {
+        max-width: 80%; /* A imagem pode ser maior em telas grandes */
+    }
+}

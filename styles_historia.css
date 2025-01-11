@@ -1,0 +1,102 @@
+/* Resetando estilos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo geral da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* Container da história */
+.historia-container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+/* Estilo de cada história */
+.historia {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.historia img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo dos títulos da história */
+.historia h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+    margin-top: 20px;
+    color: #e64a19; /* Cor do título */
+}
+
+/* Estilo do parágrafo da história */
+.historia p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-top: 10px;
+}
+
+/* Responsividade para telas pequenas */
+@media (max-width: 600px) {
+    .historia h2 {
+        font-size: 1.5rem; /* Ajusta o título */
+    }
+
+    .historia p {
+        font-size: 1rem; /* Ajusta o texto */
+    }
+
+    .historia img {
+        max-width: 95%; /* Ajusta as imagens */
+    }
+}
+
+/* Estilo para as datas */
+.data {
+    font-family: 'Dancing Script', cursive; /* Usando a mesma fonte cursiva para combinar com os títulos */
+    font-size: 1.2rem; /* Tamanho de fonte menor, para não competir com os títulos */
+    color: red; /* Cor vermelha */
+    margin-top: 5px; /* Espaçamento entre o título e a data */
+    margin-bottom: 15px; /* Espaçamento abaixo da data */
+    font-weight: bold; /* Para dar um destaque */
+}
+
+
+/* Estilos específicos para a página de poesia */
+
+/* Estilo do título da poesia */
+.poesia h2 {
+    font-family: 'Merriweather', serif; /* Usando Merriweather para a poesia */
+    font-size: 2.5rem;
+    text-align: center;
+    color: #6a1b9a; /* Cor roxa/azul para o título da poesia */
+    margin-bottom: 20px;
+}
+
+/* Estilo para os versos da poesia */
+.poesia .versos {
+    font-family: 'Merriweather', serif; /* Usando Merriweather para os versos também */
+    font-size: 1.3rem;
+    line-height: 1.4; /* Ajustado o line-height para não ter muito espaçamento entre as linhas */
+    color: #333;
+    text-align: center;
+    margin: 0 auto;
+    width: 90%;
+    white-space: pre-line; /* Faz com que quebras de linha no código HTML sejam respeitadas */
+}
+
+/* Estilo para espaçamento a cada 4 versos */
+.poesia .versos p:nth-of-type(4n) {
+    margin-bottom: 20px; /* Espaçamento a cada 4 versos */
+}
+
